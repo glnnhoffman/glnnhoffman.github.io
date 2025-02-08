@@ -1,7 +1,711 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glenn Hoffman Portfolio</title>
+
+    <link rel="shortcut icon" href="./images/prompt_engineer.jpg">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="particles-js"></div> 
+    <div class="count-particles">
+        <main>
+            <!-- #SIDEBAR-->
+            <aside class="sidebar" data-sidebar>
+                <div class="sidebar-info">
+                    <figure class="avatar-box">
+                        <img src="./images/Hoffman.G.jpg" alt="Glenn Hoffman photo" width="80">
+                    </figure>
+                    <div class="info-content">
+                        <h1 class="name" title="Glenn Hoffman">Glenn Hoffman</h1>
+                        <p class="title">Data Engineering Manager</p>
+                    </div>
+                    <button class="info_more-btn" data-sidebar-btn>
+                        <span>Show Contacts</span>
+        
+                        <ion-icon name="chevron-down"></ion-icon>
+                    </button>
+                </div>
+        
+                <div class="sidebar-info_more">
+                    <div class="separator"></div>
+                    <ul class="contacts-list">
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
+                                <a href="mailto:gh100575@gmail.com" class="contact-link">gh100575@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
+                                <a href="tel:+17248776675" class="contact-link">+1 (724) 877-6675</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Birthday</p>
+                                <time datetime="1992-03-11">March 11</time>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
+                                <address>Fort Collins, CO, USA</address>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <div class="separator"></div>
+                    <ul class="social-list">
+                        <li class="social-item">
+                        <a href="www.linkedin.com/in/glenn-hoffman-mpa-3a62b361/" 
+                        class="social-link" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        </li>
+                        <li class="social-item">
+                        <a href="https://github.com/glnnhoffman" class="social-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="main-content">
+                <!-- #NAVBAR-->
+                <nav class="navbar">
+
+                    <ul class="navbar-list">
+        
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+        
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+        <!--
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Projects</button>
+                    </li>
+        
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Research</button>
+                    </li> 
+        
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>  -->
+        
+                    </ul> 
+        
+                </nav> 
+
+                <!-- #ABOUT-->
+                <article class="about active" data-page="about">
+                    <header><h2 class="h2 article-title">About me</h2></header>
+                    <section class="about-text">
+                        <style>
+                            .highlight, .tech-skill { 
+                                display: inline-block; /* Ensures inline display 
+                                padding: 2px 4px;
+                                border-radius: 4px;
+                                margin: 0 2px;
+                                line-height: 1.2;*/
+                            }
+                            .tech-skill { 
+                                /*background-color: #029502;  Azure Blue for tools */
+                                color: var(--vegas-gold); /* White text for contrast */ 
+                                text-emphasis: bold;  
+                            }
+                            .highlight { 
+                                /*background-color: #FF9F45;  Sunset Orange for skills */
+                                color: var(--vegas-gold); /* Ensuring readability */
+                                text-emphasis: bold;
+                            }
+                        </style>
+                        <p> 
+                            I’m a <span class="highlight">Data Engineering Manager</span> with a track record of building scalable, secure, and efficient data infrastructure. 
+                            With experience in Azure, Python, MySQL, and ETL pipeline development, I design and deploy full-stack solutions that empower 
+                            organizations to access and analyze data seamlessly.
+                        </p>
+                        <p>
+                            Currently leading data strategy at a non-profit working to address climate change on a global scale, I’ve built centralized data platforms, 
+                            integrated AI-driven insights, and optimized workflows using <span class="tech-skill">Python(Flask & Django), Azure AI Service, and Microsoft Power Platform</span>. 
+                            Beyond technical implementation, I excel at bridging the gap between engineering and business needs—translating complex data solutions into 
+                            actionable insights for stakeholders at all levels.
+                        </p>
+                        <p>
+                            Whether designing cloud-based architectures, automating workflows, or mentoring teams, I thrive in dynamic, cross-functional environments. 
+                            I'm passionate about solving complex challenges and am eager to bring my expertise to innovative teams in the private sector.
+                        </p>
+                        <p>
+                            I possess a robust skill set that includes proficiency in tools like <span class="tech-skill">ArcGIS Pro</span>, 
+                            <span class="tech-skill">Azure Web Apps & Functions</span>, <span class="tech-skill">Microsoft Power BI</span>, 
+                            <span class="tech-skill">Tableau</span>, <span class="tech-skill">QGIS</span>, and programming languages such as 
+                            <span class="tech-skill">Python</span>, <span class="tech-skill">R</span>, and <span class="tech-skill">SQL</span>.
+                        </p>
+                        <p>
+                            Outside of work, I have a deep appreciation for natural landscapes and fitness. 
+                            Whether it's snowboarding, trail running, or exploring new environments, I find energy and balance in the outdoors.
+                        </p>
+                        <p>
+                            Let’s connect — data should work for you, not the other way around.
+                        </p>
+                    </section>
+                </article>
+
+                <!-- #RESUME-->
+                <article class="resume" data-page="resume">
+                    <header>
+                        <h2 class="h2 article-title">Resume</h2>
+                    </header>
+
+                    <section class="timeline">
+                        <div class="title-wrapper">
+                            <div class="icon-box">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </div>
+                            <h3 class="h3">Education</h3>
+                        </div>
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">University of Pittsburgh
+                                    <span class="right-align">Pittsburgh, PA, US</span>
+                                </h4>
+                            
+                                <span class="program">Masters of Public Administration;  GPA: 4.00
+                                    <span class="right-align-gold">Jan, 2020 - Dec, 2022</span>
+                                </span>
+            
+                                <p class="timeline-text">
+                                    Financial Management, Public Policy Analysis, Data Analysis,
+                                    Environmental Economics, Quantitative Methods, Climate Policy.
+                                </p>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">Edinboro University of Pennsylvania
+                                    <span class="right-align">Edinboro, PA, US</span>
+                                </h4>
+                                <span class="program">B.S. Environmental Science-Biology;  GPA: 3.55
+                                    <span class="right-align-gold">Jan, 2011 - May, 2015</span>
+                                </span>
+                                <span class="program">B.A. Earth Sciences;  GPA: 3.55
+                                    <span class="right-align-gold">Jan, 2011 - May, 2015</span>
+                                </span>
+                                <p class="timeline-text">
+                                    Organic Chemistry, Geology, Ecology, Biology, GIS, Genetics, 
+                                    Environmental Ethics.  
+                                </p>
+                            </li>
+                        </ol>
+                    </section>
+            
+                    <section class="timeline">
+                        <div class="title-wrapper">
+                            <div class="icon-box">
+                                <ion-icon name="book-outline"></ion-icon>
+                            </div>   
+                            <h3 class="h3">Experience</h3>
+                        </div>  
+                        <ol class="timeline-list">
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">RMI [Rocky Mountain Institute]
+                                    <span class="right-align">Boulder, CO, US</span>
+                                </h4>
+                                <span class="program">Data Engineering Manager
+                                <span class="right-align-gold">September, 2024 - Present</span>
+                                <span class="program">Lead Data Engineer
+                                <span class="right-align-gold">November, 2022 - September, 2024</span>
+                                </span>
+                                <ul>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Develop a centralized data storage and access structure for 800 staff users
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Deploy full stack solutions leveraging Azure Web Apps, Flask, Django, and MySQL resources.
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Create Python and R-based ETL pipelines for over thirty data sources, leveraging API, XML, and web scraping data connection techniques
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Utilize Microsoft Power Platform in combination with Python to embed content access and request processes within RMI’s primary systems without accruing additional costs
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Provide internal consulting services related to Python, R, Google Analytics, and general ETL pipeline design and development
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Research and test business function applications of chat interfaces and APIs for OpenAI and Microsoft GPT models
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <h4 class="h4 timeline-item-title">University of Pittsburgh School of Pharmacy
+                                    <span class="right-align">Pittsburgh, PA, US</span>
+                                </h4>
+                                <span class="program">Manager, Data Analytics & Informatics
+                                    <span class="right-align-gold">October, 2021 - November, 2022</span>
+                                <span class="program">Associate Informatics Analyst
+                                    <span class="right-align-gold">Februrary, 2021 - October, 2021</span>
+                                <span class="program">Assistant Data Analyst
+                                    <span class="right-align-gold">March, 2019 - Februrary, 2021</span>
+                                <span class="program">Research Specialist - Temporary
+                                    <span class="right-align-gold">November, 2018 - March, 2019</span>
+                                </span>
+                                <ul>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Supervise up to five associate and assistant-level data analytics 
+                                            and informatics staff </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Develop data processing and analysis protocols to reduce errors 
+                                            and increase workflow automation 
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Develop data dashboards with geospatial and tabular data for internal 
+                                            and external stakeholders 
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Lead all geospatial data management and analysis
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Assist with the design and maintenance of multiple project websites
+                                            and relational databases 
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Assist stakeholders in the implementation and assessment of 
+                                            systems-based initiatives in the areas of overdose and suicide 
+                                            prevention </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Research evidence-based practices and generate concise literature 
+                                            reviews for staff reference 
+                                        </p>
+                                    </li>
+                                    <li class="timeline-text-ul">
+                                        <p class="timeline-text-ul-item">
+                                            Facilitate overdose reduction strategic planning and implementation 
+                                            with external stakeholders
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                </article>
+
+                <!-- #PROJECTS-->
+                <article class="projects" data-page="projects">
+                    <header>
+                        <h2 class="h2 article-title">Projects</h2>
+                    </header>
+                    <section class="project-posts">
+                        <ul class="project-posts-list">
+                            <li class="project-post-item">
+                                <a href="https://github.com/aasishtammana/Decoding-Demographics" target="_blank">
+                                    <figure class="project-banner-box">
+                                        <img src="./images/Decoding_Demographics.png" alt="Decoding Demographics" loading="lazy">
+                                    </figure>
+                                    <div class="project-content">
+                                        <div class="project-meta">
+                                        <p class="project-category">Data Visualization</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Strategic Marketing</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Data Processing</p>
+                                        </div>
+                                        <h3 class="h4 project-item-title">Decoding Demographics: Data Visualization for Enhancing College Enrollment</h3>
+                                        <p class="project-text">
+                                            Leveraged US Census Bureau data to develop marketing profiles and visualizations for UVW College, aiming to identify key variables influencing individuals' income levels.
+                                        </p>
+                                        <p class="project-text">
+                                            Uncovered patterns and trends that assist in forecasting income based on various parameters. Utilized advanced analytics, to provide actionable insights for UVW College to target specific demographic groups, thereby optimizing marketing strategies and improving enrollment rates. 
+                                        </p>
+                                        <p class="project-text">
+                                            Offered a comprehensive overview of factors affecting enrollment choices and guided the creation of effective marketing campaigns.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech">Python</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Pandas</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Matplotlib / Seaborn</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Jupyter</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project-post-item">
+                                <a href="https://github.com/aasishtammana/Heard-Disease-Prediction" target="_blank">
+                                    <figure class="project-banner-box">
+                                        <img src="./images/Heart_Disease_Prediction.png" alt="Heart Disease Prediction" loading="lazy">
+                                    </figure>
+                                    <div class="project-content">
+                                        <div class="project-meta">
+                                        <p class="project-category">Data Analysis</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Predictive Modeling</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Health Informatics</p>
+                                        </div>
+                                        <h3 class="h4 project-item-title">Predictive Analysis: Data Analysis for Heart Disease Prediction</h3>
+                                        <p class="project-text">
+                                            This project explores the application of data analysis and machine learning to predict heart disease from clinical data. It involved generating correlation and covariance matrices to understand feature relationships by deploying various machine learning models such as Support Vector Machine (SVM), Random Forest, K-Nearest Neighbours, Perceptron, Decision Tree and Logistic Regression to predict heart diseases with high accuracy. 
+                                        </p>
+                                        <p class="project-text">
+                                            The analysis provided valuable insights into the correlations between features, aiding in the selection of relevant variables for model building. SVM emerged as the most reliable model, showcasing the project's potential to aid healthcare professionals in diagnosing cardiac conditions more accurately.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech">Python</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Scikit-learn</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Pandas</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Matplotlib</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">NumPy </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project-post-item">
+                                <a href="https://github.com/aasishtammana/Sign-Language-Detection" target="_blank">
+                                    <figure class="project-banner-box">
+                                        <img src="./images/Sign_Language_Detection.png" alt="Sign Language Detection" loading="lazy">
+                                    </figure>
+                                    <div class="project-content">
+                                        <div class="project-meta">
+                                        <p class="project-category">Computer Vision</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Machine Learning</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Image Processing</p>
+                                        </div>
+                                        <h3 class="h4 project-item-title">Real-Time Sign Language Detection and Translation</h3>
+                                        <p class="project-text">
+                                            This project pioneers a real-time solution for bridging the communication gap between deaf and hearing communities through sign language detection and translation. Leveraging  machine learning and computer vision, this system interprets live video feeds of sign language, converting them into spoken or written text. 
+                                        </p>
+                                        <p class="project-text">
+                                            It utilizes camera feed, image processing algorithms, and a Long Short-Term Memory (LSTM) neural network to accurately capture and analyze dynamic hand gestures and movements, facilitating seamless communication across communities.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech">Python</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">scikit-learn</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">opencv</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">media-pipe</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">numpy</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project-post-item">
+                                <a href="https://github.com/aasishtammana/Power-Of-Collaboration" target="_blank">
+                                    <figure class="project-banner-box">
+                                        <img src="./images/Power_Of_Collaboration.png" alt="Power Of Collaboration" loading="lazy">
+                                    </figure>
+                                    <div class="project-content">
+                                        <div class="project-meta">
+                                        <p class="project-category">Machine Learning</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Optimization</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Performance Analytics</p>
+                                        </div>
+                                        <h3 class="h4 project-item-title">Power Of Collaboration: Machine Learning for Optimizing Performance</h3>
+                                        <p class="project-text">
+                                            This project explores the innovative application of machine learning techniques to optimize team configurations, focusing on maximizing strengths and minimizing weaknesses within diverse groups. The study leverages NBA statistics and social network analysis to recommend optimal team member replacements. 
+                                        </p>
+                                        <p class="project-text">
+                                            By integrating skill-based matching, social network analysis, and graph kernel methods, the project aims to aid coaches, managers, and organizational leaders in making data-driven decisions for team assembly. The approach not only promises enhanced team performance but also introduces a scalable, efficient solution to the complex problem of team member replacement.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech">Python</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">scikit-learn</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Graph Kernels</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project-post-item">
+                                <a href="https://github.com/aasishtammana/Optimizing-Warehouse-Operations" target="_blank">
+                                    <figure class="project-banner-box">
+                                        <img src="./images/Optimizing_Warehouse_Operations.png" alt="Optimizing Warehouse Operations" loading="lazy">
+                                    </figure>
+                                    <div class="project-content">
+                                        <div class="project-meta">
+                                        <p class="project-category">Knowledge Representation</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Operations Research</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">ASP</p>
+                                        </div>
+                                        <h3 class="h4 project-item-title">Optimizing Operations: Automated Warehouse</h3>
+                                        <p class="project-text">
+                                            This project explores the application of Answer Set programming and operations research to enhance efficiency in warehouse operations. By developing a logic programming model that governs actions of automated robots, the project achieves significant optimizations in task execution times and overall efficiency. 
+                                        </p>
+                                        <p class="project-text">
+                                            The model focuses on strategic task allocation, movement optimization, and dynamic response to variables, effectively minimizing resource utilization while maximizing throughput. This demonstrates the potential of robotics in transforming logistics and supply chain management.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech">Clingo</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project-post-item">
+                                <a href="https://github.com/aasishtammana/Smart-Farming" target="_blank">
+                                    <figure class="project-banner-box">
+                                        <img src="./images/Vertical_Farming.png" alt="Vertical Farming" loading="lazy">
+                                    </figure>
+                                    <div class="project-content">
+                                        <div class="project-meta">
+                                        <p class="project-category">Internet of Things</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Smart Agriculture</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Sustainability</p>
+                                    </div>
+                                        <h3 class="h4 project-item-title">VerTech: Revolutionizing Vertical Farming with IoT</h3>
+                                        <p class="project-text">
+                                            VerTech is an innovative IoT solution designed to enhance vertical farming practices. By integrating a comprehensive array of sensors with the Bolt IoT platform, VerTech provides real-time data analytics and a management dashboard to optimize growing conditions. 
+                                        </p>
+                                        <p class="project-text">
+                                            This system supports sustainable agriculture by minimizing management needs, reducing carbon emissions, and boosting yields, making organically grown produce more accessible and cost-effective. VerTech's adaptable framework benefits retail stores, food suppliers, and can be scaled down for home use, representing a smarter, more sustainable farming practice.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech">Hardware Sensors</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Bolt IoT</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">MIT App Inventor</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project-post-item">
+                                <a href="https://github.com/aasishtammana/Eyantra-Pollinator-Bee" target="_blank">
+                                    <figure class="project-banner-box">
+                                        <img src="./images/Pollinator_Bee.png" alt="Pollinator Bee" loading="lazy">
+                                    </figure>
+                                    <div class="project-content">
+                                        <div class="project-meta">
+                                        <p class="project-category">Image Processing</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Robotics</p>
+                                        <span class="dot"></span>
+                                        <p class="project-category">Autonomous Systems</p>
+                                    </div>
+                                        <h3 class="h4 project-item-title">Pollinator Bee: Autonomous Drone</h3>
+                                        <p class="project-text">
+                                            This project showcases the innovative use of drone technology to mimic the natural pollination process of bees, employing advanced image processing and control systems. Designed as part of the e-Yantra Robotics Competition 2018, the project involves the creation of a drone that navigates to simulate a bee's pollination path, using LEDs as stand-ins for flowers. 
+                                        </p>
+                                        <p class="project-text">
+                                            Beyond its primary ecological purpose, the project explores the drone's potential in disaster management scenarios, such as locating survivors in areas inaccessible or dangerous for human rescuers. This multifaceted project not only highlights technical prowess in robotics but also addresses critical environmental and humanitarian needs.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech">Python</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">ROS</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">OpenCV</span>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span class="tech">Hardware</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+
+                <!-- #RESEARCH-->
+                <article class="research" data-page="research">
+                    <header>
+                        <h2 class="h2 article-title">Research</h2>
+                    </header>
+                    <section class="research-posts">
+                        <ul class="research-posts-list">
+                            <li class="research-post-item">
+                                <a href="https://github.com/aasishtammana/Covid-Spread-Data-Analysis" target="_blank">
+                                    <!-- Top left image -->
+                                    <figure class="research-banner-box">
+                                        <img src="./images/Masking_Policy.png" alt="Top Right Image Description" loading="lazy">
+                                    </figure>
+                                    
+                                    <!-- Bottom right image
+                                    <figure class="research-banner-box">
+                                        <img src="./images/Covid_Deaths.png" alt="Bottom Right Image Description" loading="lazy">
+                                    </figure> -->
+                                    <div class="research-content">
+                                        <div class="research-meta">
+                                        <p class="research-category">Center for Accelerating Operational Efficiency</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-02-03">Dec 23, 2023</time>
+                                        </div>
+                                        <h5 class="h5 research-item-title">Impact of COVID-19 Interventions and Case Trends</h5>
+                                        <!-- <p class="research-text">
+                                            A detailed exploration of the dynamics of the COVID-19 pandemic across various U.S. states from 2020 to 2023 reveals the significant impact of vaccination rates, public health measures, and political factors on case trends. The analysis focuses on the spatial-temporal distribution of cases, hospitalizations, and mortality rates, utilizing extensive datasets to elucidate the effects of different interventions on the pandemic's trajectory. State-level responses, including the implementation of facial covering policies and vaccination campaigns, are assessed for their efficacy in curtailing virus transmission. Advanced statistical methods are employed to identify correlations between these strategies and pandemic outcomes, with findings highlighting vaccination's paramount role in diminishing case numbers and severe health consequences.
+                                        </p>
+                                        <br>
+                                        <p class="research-text">
+                                            Moreover, the examination extends to demographic disparities, uncovering pronounced differences in COVID-19's impact based on age, gender, and race/ethnicity. This aspect of the study underscores the nuanced interplay of sociodemographic factors with pandemic dynamics, advocating for public health interventions that are cognizant of these disparities. The conclusions drawn advocate for a multi-faceted approach to pandemic management, one that is adaptive and informed by comprehensive real-time data analysis, to effectively mitigate the spread and impact of COVID-19.
+                                        </p> -->
+                                        <p class="research-text">
+                                            An analysis of the COVID-19 pandemic's evolution in the U.S. from 2020 to 2023 shows how vaccination rates, public health policies, and political influences shaped case trends. By examining data on case distribution, hospitalizations, and deaths, the study reveals the impact of interventions like mask mandates and vaccination drives on the pandemic's course.
+                                        </p>
+                                        <p class="research-text">
+                                            The study also explored how COVID-19 affected different demographic groups, highlighting disparities by age, gender, and race/ethnicity.
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="research-post-item">
+                                <a href="https://doi.org/10.1007/978-981-16-0882-7_50" target="_blank">
+                                    <!-- Top left image -->
+                                    <figure class="research-banner-box">
+                                        <img src="./images/Thermal_Image_YOLO.png" alt="Top Right Image Description" loading="lazy">
+                                    </figure>
+                                    
+                                    <!-- Bottom right image
+                                    <figure class="research-banner-box">
+                                        <img src="./images/Fire_Detection.png" alt="Bottom Right Image Description" loading="lazy">
+                                    </figure> -->
+                                    <div class="research-content">
+                                        <div class="research-meta">
+                                        <p class="research-category">ICTCS 2020</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-02-03">July 06, 2021</time>
+                                        </div>
+                                        <h5 class="h5 research-item-title">Thermal Image Processing and Analysis - Surveillance UAVs</h5>
+                                        <!-- <p class="research-text">
+                                            The project "Thermal Image Processing and Analysis for Surveillance UAVs" explores the potential of drones equipped with thermal cameras for forest fire detection and human surveillance.This project pioneers a forward-thinking approach to forest fire surveillance and human detection in challenging terrains. Through rigorous comparative analysis, the research meticulously evaluates the performance of two state-of-the-art human detection algorithms—Histogram of Oriented Gradients (HOG) and You Only Look Once (YOLOv2)—alongside a specialized fire detection algorithm tailored for thermal video analytics.
+                                        </p>
+                                        <br>
+                                        <p class="research-text">
+                                            The study's comprehensive findings reveal that while HOG demonstrates impressive speed in processing, YOLOv2 surpasses in accuracy, marking a significant precision of detecting humans within thermal imageries. Additionally, the custom-developed fire detection algorithm showcases remarkable potential in identifying fire signatures from aerial perspectives, underscoring the project's contribution to the enhancement of early detection systems. 
+                                            This research not only showcases the feasibility of leveraging UAVs equipped with thermal cameras for environmental monitoring but also sets a new stage in the application of artificial intelligence for natural disaster management and response strategies. The project exemplifies the synergy between technological innovation and environmental stewardship, offering a novel solution to the pressing challenge of forest fire prevention and control.
+                                        </p> -->
+                                        <p class="research-text">
+                                            The project investigates using drones with thermal cameras for detecting forest fires and monitoring humans. It compares the effectiveness of two human detection algorithms—Histogram of Oriented Gradients (HOG) and You Only Look Once (YOLOv2)—and a fire detection algorithm designed for thermal imaging. Findings indicate HOG's speed but YOLOv2's superior accuracy in human detection.The fire detection algorithm effectively identifies fires from the air, enhancing early detection systems. 
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                </article>           
+
+                <!-- #CONTACT-->
+                <article class="contact" data-page="contact">
+                    <header>
+                        <h2 class="h2 article-title">Contact</h2>
+                    </header>
+                    <section class="mapbox" data-mapbox>
+                        <figure>
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428948.9621629706!2d-117.27246491505299!3d32.8673861752929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1720497395393!5m2!1sen!2sus"
+                                width="400" height="300" 
+                                style="border:0;" allowfullscreen="" 
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </figure>
+                    </section>
+                    <section class="contact-form">
+                        <h3 class="h3 form-title">Contact Form</h3>
+                        <form action="https://script.google.com/macros/s/AKfycbxbiNejyd9DR5KzDfYpI-GhJ9G2os6r7eTiaD9upicD4qjrsTUx9qyhRRsOajCmrLLx/exec" method="POST" class="form" target="_blank" data-form>
+                            <div class="input-wrapper">
+                                <input type="text" name="entry.1308961419" class="form-input" placeholder="Full name" required data-form-input>
+                                <input type="email" name="entry.2051312497" class="form-input" placeholder="Email address" required data-form-input>
+                            </div>
+                            <textarea name="entry.161193274" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                            <button class="form-btn" type="submit" disabled data-form-btn>
+                                <ion-icon name="paper-plane"></ion-icon>
+                                <span>Send Message</span>
+                            </button>
+                            
+                        </form>
+                    </section>
+                </article> 
+            </div>      
+        </main>
+    </div> 
+    
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 </body>
 </html>
